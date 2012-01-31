@@ -1,11 +1,13 @@
 var nconf = require('nconf')
 ,   Fs    = require('fs')
 ,   Path  = require('path')
-,   Pluto = require('pluto')
 ;
 
 if (!nconf._loaded) {
-  nconf._loaded = true;
+  nconf._loaded = 'by alice';
+
+  var Pluto = require('pluto')
+  ;
 
   nconf.overrides(
     { 'alice' :

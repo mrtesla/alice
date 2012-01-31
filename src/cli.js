@@ -1,5 +1,6 @@
 var Optimist = require('optimist')
 ,   L        = require('./logger')
+,   C        = require('./config')
 ;
 
 var commands
