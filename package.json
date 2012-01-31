@@ -1,7 +1,7 @@
 {
-    "name" : "pluto-alice",
+    "name" : "alice",
     "version" : "1.0.0",
-    "description" : "[Pluto] Alice node",
+    "description" : "Alice: multi box hosting made simple",
     "author": "Simon Menke <simon.menke@gmail.com>",
     "contributors": [],
     "main": "./src/api.js",
