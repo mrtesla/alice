@@ -1,4 +1,5 @@
 var Optimist = require('optimist')
+,   L        = require('./logger')
 ;
 
 var commands

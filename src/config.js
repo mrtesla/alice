@@ -1,6 +1,7 @@
 var nconf = require('nconf')
 ,   Fs    = require('fs')
 ,   Path  = require('path')
+,   Pluto = require('pluto')
 ;
 
 nconf.overrides(
@@ -10,6 +11,9 @@ nconf.overrides(
     , 'prefix'       : Fs.realpathSync(__dirname + '/..')
     , 'node_version' : process.version
     }
+
+  , 'pluto' : Pluto.config.overrides
+
 });
 
 //
@@ -28,10 +32,14 @@ nconf.file({ file: 'config.json' });
 // 5. Any default values
 //
 nconf.defaults(
-  { 'user':
-    { 'separation' : true
-    , 'default'    : 'pluto'
+  { 'alice':
+    { 'router':
+      { 'enabled' : false
+      , 'ports'   : [4001, 4002, 4003, 4004]
+      }
     }
+
+  , 'pluto': Pluto.config.defaults
 
   , 'verbose': false
 

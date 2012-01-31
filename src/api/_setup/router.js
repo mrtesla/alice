@@ -20,10 +20,10 @@ exports.setup = function(callback){
 
   root = C.get('alice:prefix');
 
-  F.forEachAsync(port, function(next, port){
+  F.forEachAsync(ports, function(next, port){
     var task = {
-      name:    "sys:alice:router:" + instance,
-      root:    Path.join(root, 'node_modules/alice/node_modules/alice-router'),
+      task:    "sys:alice:router:" + instance,
+      root:    Path.join(root, 'node_modules/alice-router'),
       command: "node router.js $PORT",
 
       ports: [
