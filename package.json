@@ -9,15 +9,16 @@
     "scripts": {
     },
     "dependencies": {
-        "optimist"      : ">=0",
-        "nconf"         : ">=0",
-        "winston"       : ">=0",
-        "futures"       : ">=0",
-        "pluto"         : "git://github.com/mrtesla/pluto.git#develop",
-        "alice-router"  : "git://github.com/mrtesla/alice-router.git#master",
-        "alice-passer"  : "git://github.com/mrtesla/alice-passer.git#master",
-        "alice-prober"  : "git://github.com/mrtesla/alice-prober.git#master",
-        "alice-varnish" : "git://github.com/mrtesla/alice-varnish.git#master"
+        "optimist"         : ">=0",
+        "nconf"            : ">=0",
+        "winston"          : ">=0",
+        "futures"          : ">=0",
+        "pluto"            : "git://github.com/mrtesla/pluto.git#develop",
+        "alice-router"     : "git://github.com/mrtesla/alice-router.git#master",
+        "alice-passer"     : "git://github.com/mrtesla/alice-passer.git#master",
+        "alice-prober"     : "git://github.com/mrtesla/alice-prober.git#master",
+        "alice-varnish"    : "git://github.com/mrtesla/alice-varnish.git#master",
+        "alice-controller" : "git://github.com/mrtesla/alice-controller.git#master"
     },
     "repository": {
     }
