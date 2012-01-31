@@ -42,6 +42,10 @@ if (!nconf._loaded) {
         { 'enabled' : false
         , 'ports'   : [4001, 4002, 4003, 4004]
         }
+      , 'passer':
+        { 'enabled' : true
+        , 'ports'   : [5001, 5002, 5003, 5004]
+        }
       }
 
     , 'pluto': Pluto.config.defaults
