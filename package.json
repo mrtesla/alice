@@ -1,0 +1,24 @@
+{
+    "name" : "pluto-alice",
+    "version" : "1.0.0",
+    "description" : "[Pluto] Alice node",
+    "author": "Simon Menke <simon.menke@gmail.com>",
+    "contributors": [],
+    "main": "./src/api.js",
+    "bin" : { "alice" : "./bin/alice" },
+    "scripts": {
+    },
+    "dependencies": {
+        "optimist"      : ">=0",
+        "nconf"         : ">=0",
+        "winston"       : ">=0",
+        "futures"       : ">=0",
+        "pluto"         : "git://github.com/mrtesla/pluto.git#develop",
+        "alice-router"  : "git://github.com/mrtesla/alice-router.git#master",
+        "alice-passer"  : "git://github.com/mrtesla/alice-passer.git#master",
+        "alice-prober"  : "git://github.com/mrtesla/alice-prober.git#master",
+        "alice-varnish" : "git://github.com/mrtesla/alice-varnish.git#master"
+    },
+    "repository": {
+    }
+}
