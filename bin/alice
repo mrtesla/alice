@@ -11,7 +11,7 @@ var path
 path = Fs.realpathSync(process.argv[1]);
 
 while (true) {
-  if (Path.existsSync(Path.join(path, 'services'))) { break; }
+  if (Path.existsSync(Path.join(path, 'releases'))) { break; }
   if (path == '/') { path = null; break; }
   path = Path.resolve(path, '..');
 }
